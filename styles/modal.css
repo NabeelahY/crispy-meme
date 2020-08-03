@@ -1,0 +1,35 @@
+#modal {
+  /* display: none; */
+ margin: -15px -28px;
+}
+#modal .top {
+  display: flex;
+  align-items: center;
+  /* padding: 30px; */
+  width: 100%;
+
+  line-height: 20px;
+}
+
+#modal .top div {
+  background-color: #F9F5E1;
+  padding: 30px 95px 30px 30px;
+  height: 87px;
+  width: 260px;
+  border-top-left-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  font-family: 'PT Serif', serif;
+}
+
+#modal .top button {
+  width: 115px;
+  height: 87px;
+  color: #fff;
+  border-top-right-radius: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #ffbe56;
+  font-weight: bold;
+}
