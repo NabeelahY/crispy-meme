@@ -70,12 +70,13 @@
   padding: 12px 15px;
   width: 204px;
   height: 64px;
-  font-weight: lighter;
   line-height: 20px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
-.info .bolden {
-  font-weight: bold;
+.bolden {
+  font-weight: bolder ;
 }
 
 .info button {
@@ -84,11 +85,9 @@
   color: #fff;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+  font-weight: bold;
 }
 
 .info button p:first-child {
   text-decoration: line-through;
-}
-.info button p:nth-child(2) {
-  font-weight: bolder;
 }
