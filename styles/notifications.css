@@ -33,7 +33,7 @@
   }
   
   .bolden {
-    font-weight: bolder ;
+    font-weight: 600 ;
   }
   
   .info button {
@@ -42,7 +42,7 @@
     color: #fff;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    font-weight: bold;
+    font-weight: 600;
   }
   
   .info button p:first-child {
