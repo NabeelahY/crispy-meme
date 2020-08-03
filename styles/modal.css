@@ -1,18 +1,17 @@
 #modal {
-  /* display: none; */
- margin: -15px -28px;
+  display: none;
+  margin: -15px -28px;
 }
 #modal .top {
   display: flex;
   align-items: center;
-  /* padding: 30px; */
   width: 100%;
 
   line-height: 20px;
 }
 
 #modal .top div {
-  background-color: #F9F5E1;
+  background-color: #f9f5e1;
   padding: 30px 95px 30px 30px;
   height: 87px;
   width: 260px;
@@ -32,4 +31,32 @@
   font-size: 20px;
   background-color: #ffbe56;
   font-weight: bold;
+}
+
+#modal .bottom {
+  padding: 30px;
+  background-color: #fff;
+}
+
+#modal .bottom .menu {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#modal .bottom .menu img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+#modal .bottom .menu div p:first-child {
+  font-size: 18px;
+  line-height: 24px;
+  color: #303030;
+}
+
+#modal .bottom .menu div p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #6c6c6c;
 }
