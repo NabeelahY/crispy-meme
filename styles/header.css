@@ -1,0 +1,13 @@
+header {
+  margin: 17px 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header p {
+  padding: 8px 4px 0px 20px;
+}
+
+header .icons {
+  align-self: flex-end;
+}

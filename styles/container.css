@@ -1,0 +1,18 @@
+.container {
+  margin: 15px 28px;
+}
+
+.greet {
+  display: flex;
+  align-items: center;
+}
+
+.greet img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.greet h3 {
+  font-size: 17px;
+}
