@@ -1,0 +1,47 @@
+.started {
+  width: 319px;
+  height: 252px;
+  border-radius: 6px;
+  background-color: rgba(207, 236, 255, 0.5);
+  padding: 20px;
+}
+
+.started div:first-child h3 {
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.started div:first-child p {
+  font-size: 14px;
+  padding: 5px 0;
+  line-height: 20px;
+}
+
+.options {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.options .choice {
+  width: 107px;
+  line-height: 20px;
+}
+
+.options .choice img {
+  margin-bottom: 10px;
+}
+
+.options .choice .link {
+  margin-top: 15px;
+  color: #8a5cff;
+  text-decoration: underline;
+}
+
+.options .choice .link-1 {
+  margin-top: 15px;
+  color: #ff682a;
+  text-decoration: underline;
+}
