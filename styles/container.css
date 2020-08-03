@@ -29,6 +29,7 @@
 
 .account .schedule h1 {
   font-size: 28px;
+  font-weight: bolder;
 }
 
 .account .schedule button {
@@ -38,4 +39,56 @@
   background-color: rgba(255, 250, 242);
   border: 1px solid #ff9d00;
   border-radius: 13px;
+}
+
+.notification {
+  margin-top: 24px;
+}
+.info:first-child div {
+  background-color: rgba(25, 163, 91, 0.1);
+}
+
+.info:nth-child(2) div {
+  background-color: rgba(255, 189, 96, 0.1);
+}
+
+.info:first-child button {
+  background-color: #00c267;
+}
+
+.info:nth-child(2) button {
+  background-color: #ffbe56;
+}
+
+.notification .info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.notification .info div {
+  padding: 12px 15px;
+  width: 204px;
+  height: 64px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.info .bolden {
+  font-weight: bold;
+}
+
+.info button {
+  width: 115px;
+  height: 64px;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.info button p:first-child {
+  text-decoration: line-through;
+}
+.info button p:nth-child(2) {
+  font-weight: bolder;
 }
