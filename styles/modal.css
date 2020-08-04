@@ -1,24 +1,26 @@
 #modal {
-  display: none;
-  margin: -15px -28px;
+  background-color: #fff;
+  opacity: 0;
+  height: 0;
+  transform-origin: top center;
+  position: relative;
+  z-index: -1;
 }
 #modal .top {
   display: flex;
   align-items: center;
   width: 100%;
-
   line-height: 20px;
 }
 
 #modal .top div {
   background-color: #f9f5e1;
-  padding: 30px 95px 30px 30px;
   height: 87px;
-  width: 260px;
-  border-top-left-radius: 20px;
+  line-height: 87px;
+  width: 204px;
+  border-top-left-radius: 6px;
   font-weight: bold;
   text-align: center;
-  line-height: 26px;
   font-family: 'PT Serif', serif;
 }
 
@@ -26,7 +28,7 @@
   width: 115px;
   height: 87px;
   color: #fff;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 6px;
   font-weight: 600;
   font-size: 20px;
   background-color: #ffbe56;
@@ -40,7 +42,16 @@
 
 #modal .bottom .menu {
   display: flex;
-  margin-bottom: 25px;
+}
+
+#modal .bottom .menu.fall {
+  transform-origin: top center;
+  animation: slideDown 1s linear forwards;
+}
+
+#modal .bottom .menu.reverse {
+  transform-origin: top center;
+  animation: reverseMenus 1s linear forwards;
 }
 
 #modal .bottom .menu img {
@@ -59,4 +70,78 @@
   font-size: 15px;
   line-height: 24px;
   color: #6c6c6c;
+}
+
+#modal.show {
+  transform-origin: bottom;
+  animation: modalShow 1s linear forwards;
+}
+
+#modal.remove {
+  transform-origin: top center;
+  animation: modalHide 1s linear forwards;
+}
+
+@keyframes modalShow {
+  0% {
+    opacity: 0;
+    height: 0;
+    margin: -84px 0px 15px 0;
+    z-index: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%;
+    margin: -120px 0px 15px 0;
+    z-index: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes modalHide {
+  from {
+    z-index: 1;
+    opacity: 1;
+    height: 100%;
+    margin: -120px 0px 15px 0;
+    transform: scale(1.15);
+  }
+
+  to {
+    z-index: -1;
+    opacity: 0;
+    height: 0;
+    margin: -84px 0px 15px 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+    margin-bottom: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-bottom: 25px;
+  }
+}
+
+@keyframes reverseMenus {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    margin-bottom: 25px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-60px);
+    margin-bottom: 0;
+  }
 }

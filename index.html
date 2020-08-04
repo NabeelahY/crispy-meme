@@ -9,6 +9,7 @@
     <title>Eden Page</title>
   </head>
   <body>
+    <script defer="defer" src="./scripts/modal.js"></script>
     <header>
       <p>9:41</p>
       <div class="icons">
@@ -40,64 +41,66 @@
               Pay N62,800
             </button>
           </div>
-          <div class="info">
-            <div>
-              <p>View your meals for the week.</p>
-            </div>
-            <button class="bolden">Check ‘em</button>
-          </div>
-          <section id="modal">
-            <div class="top">
+          <div class="component">
+            <div class="info show-meals">
               <div>
-                Today’s Meals
+                <p>View your meals for the week.</p>
               </div>
-              <button>&#x2715;</button>
+              <button id="open-modal" class="bolden">Check ‘em</button>
             </div>
-            <div class="bottom">
-              <div class="menu">
-                <img src="assets/akara.png" alt="akara" />
+            <section id="modal">
+              <div class="top">
                 <div>
-                  <p>Akara & Pap</p>
-                  <p>Carbohydrate</p>
+                  Today’s Meals
+                </div>
+                <button id="cancel">&#x2715;</button>
+              </div>
+              <div class="bottom">
+                <div class="menu">
+                  <img src="assets/akara.png" alt="akara" />
+                  <div>
+                    <p>Akara & Pap</p>
+                    <p>Carbohydrate</p>
+                  </div>
+                </div>
+                <div class="menu">
+                  <img src="assets/jollof.png" alt="jollof" />
+                  <div>
+                    <p>Jollof Rice</p>
+                    <p>Protein</p>
+                  </div>
+                </div>
+                <div class="menu">
+                  <img src="assets//spag.png" alt="gastonton" />
+                  <div>
+                    <p>Gastonton</p>
+                    <p>Carbohydrate</p>
+                  </div>
+                </div>
+                <div class="menu">
+                  <img src="assets/port.png" alt="Port Domenic" />
+                  <div>
+                    <p>Port Domenic</p>
+                    <p>Carbohydrate</p>
+                  </div>
+                </div>
+                <div class="menu">
+                  <img src="assets/carl.png" alt="Carleeville" />
+                  <div>
+                    <p>Carleeville</p>
+                    <p>Fat & Oil</p>
+                  </div>
+                </div>
+                <div class="menu">
+                  <img src="assets/south.png" alt="South Chesleyton" />
+                  <div>
+                    <p>South Chesleyton</p>
+                    <p>Vegetable</p>
+                  </div>
                 </div>
               </div>
-              <div class="menu">
-                <img src="assets/jollof.png" alt="jollof" />
-                <div>
-                  <p>Jollof Rice</p>
-                  <p>Protein</p>
-                </div>
-              </div>
-              <div class="menu">
-                <img src="assets//spag.png" alt="gastonton" />
-                <div>
-                  <p>Gastonton</p>
-                  <p>Carbohydrate</p>
-                </div>
-              </div>
-              <div class="menu">
-                <img src="assets/port.png" alt="Port Domenic" />
-                <div>
-                  <p>Port Domenic</p>
-                  <p>Carbohydrate</p>
-                </div>
-              </div>
-              <div class="menu">
-                <img src="assets/carl.png" alt="Carleeville" />
-                <div>
-                  <p>Carleeville</p>
-                  <p>Fat & Oil</p>
-                </div>
-              </div>
-              <div class="menu">
-                <img src="assets/south.png" alt="South Chesleyton" />
-                <div>
-                  <p>South Chesleyton</p>
-                  <p>Vegetable</p>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </section>
 
         <section class="started">

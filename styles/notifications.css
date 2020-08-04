@@ -6,7 +6,7 @@
   background-color: rgba(25, 163, 91, 0.1);
 }
 
-.info:nth-child(2) div {
+.info.info.show-meals div {
   background-color: rgba(255, 189, 96, 0.1);
 }
 
@@ -14,7 +14,7 @@
   background-color: #00c267;
 }
 
-.info:nth-child(2) button {
+.info.show-meals button {
   background-color: #ffbe56;
 }
 
@@ -23,6 +23,10 @@
   align-items: center;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+.notification .info.show-meals {
+  margin-bottom: 0;
 }
 .notification .info div {
   padding: 12px 15px;
@@ -48,4 +52,30 @@
 
 .info button p:first-child {
   text-decoration: line-through;
+}
+
+.component {
+  width: 319px;
+  height: 64px;
+  transition: all 1s linear;
+}
+
+.component.active {
+  height: auto;
+}
+
+.component.active .show-meals {
+  transform-origin: top center;
+  animation: showMeals 1s linear forwards;
+}
+
+@keyframes showMeals {
+  0% {
+    transform: scaleY(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(.7);
+    opacity: 0;
+  }
 }
