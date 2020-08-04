@@ -10,37 +10,6 @@
   overflow: auto;
 }
 
-@keyframes modalOverlayShow {
-  0% {
-    opacity: 0;
-    z-index: -1;
-  }
-
-  100% {
-    opacity: 1;
-    z-index: 5;
-  }
-}
-
-.modal-overlay.display {
-  animation: modalOverlayShow 0.3s linear forwards;
-}
-
-@keyframes modalOverlayHide {
-  from {
-    opacity: 1;
-    z-index: 5;
-  }
-  to {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-.modal-overlay.removeDisplay {
-  animation: modalOverlayHide 1s linear forwards;
-}
-
 #modal {
   position: fixed;
   z-index: 10;
@@ -51,8 +20,8 @@
   height: 0;
   transform-origin: top center;
   z-index: -1;
-  overflow: auto;
 }
+
 #modal .top {
   display: flex;
   align-items: center;
@@ -92,16 +61,6 @@
   display: flex;
 }
 
-#modal .bottom .menu.fall {
-  transform-origin: top center;
-  animation: slideDown 1s linear forwards;
-}
-
-#modal .bottom .menu.reverse {
-  transform-origin: top center;
-  animation: reverseMenus 1s linear forwards;
-}
-
 #modal .bottom .menu img {
   width: 60px;
   height: 60px;
@@ -129,39 +88,6 @@
   transition: all 1s ease;
 }
 
-#modal .bottom .img-display.show {
-  animation: imgShow 0.3s linear forwards;
-}
-
-#modal .bottom .img-display img.show {
-  animation: imgExpand 0.3s linear forwards;
-}
-
-@keyframes imgExpand {
-  0% {
-    height: auto;
-    width: 100%;
-  }
-  100% {
-    height: 0;
-    width: 0;
-  }
-}
-
-@keyframes imgShow {
-  0% {
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-
-  100% {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-  }
-}
-
 #modal .bottom .menu div p:first-child {
   font-size: 18px;
   line-height: 24px;
@@ -174,77 +100,31 @@
   color: #6c6c6c;
 }
 
-#modal.show {
-  transform-origin: bottom;
-  animation: modalShow 1s linear forwards;
-}
-
-#modal.remove {
-  transform-origin: top center;
-  animation: modalHide 1s linear forwards;
-}
-
-@keyframes modalShow {
-  0% {
-    opacity: 0;
-    height: 0;
-    margin: -84px 0px 20px 0;
-    z-index: -1;
-    transform: scale(1);
-  }
-
-  100% {
-    opacity: 1;
-    max-height: 100%;
-    height: 680px;
-    margin: -120px 0px 20px 0;
-    z-index: 100;
-    transform: scale(1.15);
+@media (min-width: 376px) {
+  #modal {
+    left: 12.5%;
   }
 }
 
-@keyframes modalHide {
-  from {
-    z-index: 100;
-    opacity: 1;
-    height: 100%;
-    margin: -120px 0px 15px 0;
-    transform: scale(1.15);
+@media (min-width: 768px) {
+  #modal {
+    left: 23.5%;
   }
 
-  to {
-    z-index: -1;
-    opacity: 0;
-    height: 0;
-    margin: -84px 0px 15px 0;
-    transform: scale(1);
+  #modal .top div {
+    width: 280px;
   }
 }
 
-@keyframes slideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-60px);
-    margin-bottom: 0;
+@media (min-width: 1024px) {
+  #modal {
+    left: 30%;
   }
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-    margin-bottom: 25px;
+  #modal .top div {
+    width: 500px;
   }
-}
-
-@keyframes reverseMenus {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-    margin-bottom: 25px;
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-60px);
-    margin-bottom: 0;
+  #modal .top button {
+    width: 180px;
   }
 }

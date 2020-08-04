@@ -55,7 +55,6 @@
 }
 
 .component {
-  width: 319px;
   height: 64px;
   transition: all 1s linear;
 }
@@ -75,7 +74,42 @@
     opacity: 1;
   }
   100% {
-    transform: scaleY(.7);
+    transform: scaleY(0.7);
     opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .notification .info div {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .notification .info {
+    margin-bottom: 30px;
+  }
+  .notification .info div {
+    width: 70%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 30px;
+    height: 120px;
+  }
+
+  .component {
+    height: 30%;
+  }
+  .component .show-meals div {
+    height: 120px;
+  }
+
+  .info button,
+  .component .show-meals button {
+    width: 30%;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: 30px;
+    height: 120px;
   }
 }
