@@ -4,6 +4,9 @@ const menus = document.querySelectorAll('.menu');
 const close = document.getElementById('cancel');
 const component = document.querySelector('.component');
 const overlay = document.querySelector('.modal-overlay');
+const imgs = document.querySelectorAll('.menu img');
+const imgDisplay = document.querySelector('.img-display img');
+const lightbox = document.querySelector('.img-display');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -30,4 +33,28 @@ close.addEventListener('click', (e) => {
     menus[i].classList.add('reverse');
     menus[i].classList.remove('fall');
   }
+});
+
+const appendImg = (img) => {
+  imgDisplay.src = img.src;
+  imgDisplay.alt = img.alt;
+};
+
+imgs.forEach((img) => {
+  img.addEventListener('click', () => {
+    console.log('click');
+    img.classList.add('expand');
+    appendImg(img);
+    lightbox.classList.add('show');
+  });
+});
+
+imgs.forEach((img) => {
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.remove('show');
+    img.classList.remove('expand');
+    img.classList.add('show');
+    // imgDisplay.src = '';
+    // imgDisplay.alt = '';
+  });
 });
