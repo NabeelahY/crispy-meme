@@ -66,6 +66,7 @@
   height: 60px;
   margin-right: 15px;
   transition: all 1s ease;
+  border-radius: 15px;
 }
 
 #modal .bottom .img-display {
