@@ -1,51 +1,81 @@
 .notification {
-    margin-top: 24px;
+  margin-top: 24px;
+}
+
+.info:first-child div {
+  background-color: rgba(25, 163, 91, 0.1);
+}
+
+.info.info.show-meals div {
+  background-color: rgba(255, 189, 96, 0.1);
+}
+
+.info:first-child button {
+  background-color: #00c267;
+}
+
+.info.show-meals button {
+  background-color: #ffbe56;
+}
+
+.notification .info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.notification .info.show-meals {
+  margin-bottom: 0;
+}
+.notification .info div {
+  padding: 12px 15px;
+  width: 204px;
+  height: 64px;
+  line-height: 20px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.bolden {
+  font-weight: 600;
+}
+
+.info button {
+  width: 115px;
+  height: 64px;
+  color: #fff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-weight: 600;
+}
+
+.info button p:first-child {
+  text-decoration: line-through;
+}
+
+.component {
+  width: 319px;
+  height: 64px;
+  transition: all 1s linear;
+}
+
+.component.active {
+  height: auto;
+}
+
+.component.active .show-meals {
+  transform-origin: top center;
+  animation: showMeals 1s linear forwards;
+}
+
+@keyframes showMeals {
+  0% {
+    transform: scaleY(1.2);
+    opacity: 1;
   }
-  .info:first-child div {
-    background-color: rgba(25, 163, 91, 0.1);
+  100% {
+    transform: scaleY(.7);
+    opacity: 0;
   }
-  
-  .info:nth-child(2) div {
-    background-color: rgba(255, 189, 96, 0.1);
-  }
-  
-  .info:first-child button {
-    background-color: #00c267;
-  }
-  
-  .info:nth-child(2) button {
-    background-color: #ffbe56;
-  }
-  
-  .notification .info {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  .notification .info div {
-    padding: 12px 15px;
-    width: 204px;
-    height: 64px;
-    line-height: 20px;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  
-  .bolden {
-    font-weight: 600 ;
-  }
-  
-  .info button {
-    width: 115px;
-    height: 64px;
-    color: #fff;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    font-weight: 600;
-  }
-  
-  .info button p:first-child {
-    text-decoration: line-through;
-  }
-  
+}
