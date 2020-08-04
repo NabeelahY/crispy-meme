@@ -5,16 +5,13 @@
 
 @font-face {
   font-family: 'Cerebri Sans Regular';
-  src: url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.eot');
-  src: url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.eot?#iefix')
+  src: url('fonts/@font-face/CerebriSans-Light.eot');
+  src: url('fonts/@font-face/CerebriSans-Light.eot?#iefix')
       format('embedded-opentype'),
-    url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.woff2')
-      format('woff2'),
-    url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.woff') format('woff'),
-    url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.ttf')
-      format('truetype'),
-    url('fonts/@font-face/bb018e64d01355748d8ddc53553850b9.svg#Cerebri Sans Regular')
-      format('svg');
+    url('fonts/@font-face/CerebriSans-Light.woff2') format('woff2'),
+    url('fonts/@font-face/CerebriSans-Light.woff') format('woff'),
+    url('fonts/@font-face/CerebriSans-Light.ttf') format('truetype'),
+    url('fonts/@font-face/CerebriSans-Light.svg') format('svg');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
@@ -108,7 +105,6 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
   font-family: 'Cerebri Sans Regular';
-  font-weight: 500;
 }
 /* HTML5 display-role reset for older browsers */
 article,

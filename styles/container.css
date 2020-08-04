@@ -16,3 +16,27 @@
 .greet h3 {
   font-size: 17px;
 }
+
+.account {
+  margin-top: 25px;
+}
+
+.account .schedule {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account .schedule h1 {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.account .schedule button {
+  width: 140px;
+  color: #ff9d00;
+  font-size: 12px;
+  background-color: rgba(255, 250, 242);
+  border: 1px solid #ff9d00;
+  border-radius: 13px;
+}

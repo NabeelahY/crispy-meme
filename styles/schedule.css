@@ -1,0 +1,37 @@
+.plan .slot {
+  margin-top: 30px;
+}
+
+.plan .slot h3 {
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 16px;
+  color: #00c267;
+}
+.plan .slot .times {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.time {
+  font-size: 12px;
+  width: 59px;
+}
+
+.bubble,
+.bubble-1 {
+  width: 260px;
+  font-size: 15px;
+  padding: 13px 7px 13px 13px;
+  border-radius: 6px;
+  line-height: 20px;
+}
+
+.bubble {
+  background-color: rgba(207, 236, 255, 0.5);
+}
+.bubble-1 {
+  background-color: rgb(138, 92, 255, 0.5);
+}
