@@ -35,3 +35,36 @@
 .bubble-1 {
   background-color: rgb(138, 92, 255, 0.5);
 }
+
+@media (min-width: 768px) {
+  .time {
+    width: 30%;
+  }
+  .bubble,
+  .bubble-1 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plan .slot h3 {
+    font-size: 2rem;
+  }
+  .time {
+    width: 30%;
+    font-size: 1.6rem;
+  }
+
+  .plan .slot .times {
+    margin-bottom: 40px;
+  }
+
+  .bubble,
+  .bubble-1 {
+    width: 70%;
+    height: 90px;
+    font-size: 1.4rem;
+    padding: 20px;
+    line-height: 1.2;
+  }
+}

@@ -51,8 +51,8 @@
   height: 0;
   transform-origin: top center;
   z-index: -1;
-  overflow: auto;
 }
+
 #modal .top {
   display: flex;
   align-items: center;
@@ -246,5 +246,11 @@
     opacity: 0;
     transform: translateY(-60px);
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 376px) {
+  #modal {
+    left: 12.5%;
   }
 }

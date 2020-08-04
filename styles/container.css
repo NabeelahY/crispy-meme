@@ -1,5 +1,6 @@
 .container {
   margin: 15px 28px;
+  width: 319px;
 }
 
 .greet {
@@ -39,4 +40,43 @@
   background-color: rgba(255, 250, 242);
   border: 1px solid #ff9d00;
   border-radius: 13px;
+}
+
+@media (min-width: 376px) {
+  .container {
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 800px;
+    margin: auto;
+  }
+
+  .greet img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .greet h3 {
+    font-size: 2rem;
+  }
+
+  .account .schedule h1 {
+    font-size: 2.4rem;
+  }
+
+  .account .schedule button {
+    width: 200px;
+    font-size: 1.2rem;
+    padding: 5px 0;
+  }
 }
