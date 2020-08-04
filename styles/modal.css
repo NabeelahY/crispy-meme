@@ -1,10 +1,57 @@
-#modal {
-  background-color: #fff;
+.modal-overlay {
   opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+@keyframes modalOverlayShow {
+  0% {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+
+.modal-overlay.display {
+  animation: modalOverlayShow 0.3s linear forwards;
+}
+
+@keyframes modalOverlayHide {
+  from {
+    opacity: 1;
+    z-index: 5;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.modal-overlay.removeDisplay {
+  animation: modalOverlayHide 1s linear forwards;
+}
+
+#modal {
+  position: fixed;
+  z-index: 10;
+  top: 40%;
+  left: 7.5%;
+  opacity: 0;
+  min-height: 0;
   height: 0;
   transform-origin: top center;
-  position: relative;
   z-index: -1;
+  overflow: auto;
 }
 #modal .top {
   display: flex;
@@ -18,7 +65,7 @@
   height: 87px;
   line-height: 87px;
   width: 204px;
-  border-top-left-radius: 6px;
+  border-top-left-radius: 20px;
   font-weight: bold;
   text-align: center;
   font-family: 'PT Serif', serif;
@@ -28,7 +75,7 @@
   width: 115px;
   height: 87px;
   color: #fff;
-  border-top-right-radius: 6px;
+  border-top-right-radius: 20px;
   font-weight: 600;
   font-size: 20px;
   background-color: #ffbe56;
@@ -38,6 +85,7 @@
 #modal .bottom {
   padding: 30px;
   background-color: #fff;
+  overflow: auto;
 }
 
 #modal .bottom .menu {
@@ -86,23 +134,24 @@
   0% {
     opacity: 0;
     height: 0;
-    margin: -84px 0px 15px 0;
-    z-index: 1;
+    margin: -84px 0px 20px 0;
+    z-index: -1;
     transform: scale(1);
   }
 
   100% {
     opacity: 1;
+    max-height: 100%;
     height: 100%;
-    margin: -120px 0px 15px 0;
-    z-index: 1;
+    margin: -120px 0px 20px 0;
+    z-index: 100;
     transform: scale(1.15);
   }
 }
 
 @keyframes modalHide {
   from {
-    z-index: 1;
+    z-index: 100;
     opacity: 1;
     height: 100%;
     margin: -120px 0px 15px 0;
